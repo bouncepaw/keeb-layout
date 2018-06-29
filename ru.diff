@@ -1,0 +1,45 @@
+10,11c10,11
+<     include "ru(common)"
+<     name[Group1]= "Russian";
+---
+>   include "ru(common)"
+>   name[Group1]= "Russian";
+13,18c13,18
+<     key <AE03> { [           3,  numerosign  ] };
+<     key <AE04> { [           4,   semicolon  ] };
+<     key <AE05> { [           5,     percent  ] };
+<     key <AE06> { [           6,       colon  ] };
+<     key <AE07> { [           7,    question  ] };
+<     key <AE08> { [           8,    asterisk, U20BD  ] };
+---
+>   key <AE03> {[ 3, numerosign ]};
+>   key <AE04> {[ 4, semicolon ]};
+>   key <AE05> {[ 5, percent ]};
+>   key <AE06> {[ 6, colon ]};
+>   key <AE07> {[ 7, question ]};
+>   key <AE08> {[ 8, asterisk, U20BD ]};
+20,21c20,40
+<     key <AB10> { [      period,       comma  ] };
+<     key <BKSL> { [   backslash,       slash  ] };
+---
+>   key <AE11> {[ minus, underscore, emdash ]}; // —
+> 
+>   key <AD06> {[ Cyrillic_en,    Cyrillic_EN,    Home ]};
+>   key <AD07> {[ Cyrillic_ghe,   Cyrillic_GHE,   Page_Down ]};
+>   key <AD08> {[ Cyrillic_sha,   Cyrillic_SHA,   Page_Up ]};
+>   key <AD09> {[ Cyrillic_shcha, Cyrillic_SHCHA, End ]};
+>   key <AD10> {[ Cyrillic_ze,    Cyrillic_ZE,    BackSpace ]};
+>   key <AD11> {[ Cyrillic_ha,    Cyrillic_HA,    Delete ]};
+> 
+>   key <AC06> {[ Cyrillic_er, Cyrillic_ER, Left ]};
+>   key <AC07> {[ Cyrillic_o,  Cyrillic_O,  Down ]};
+>   key <AC08> {[ Cyrillic_el, Cyrillic_EL, Up ]};
+>   key <AC09> {[ Cyrillic_de, Cyrillic_DE, Right ]};
+> 
+>   key <AB08> {[ Cyrillic_be, Cyrillic_BE, guillemotleft ]}; // «
+>   key <AB09> {[ Cyrillic_yu, Cyrillic_YU, guillemotright ]}; // »
+>   key <AB10> {[ period,      comma ]};
+> 
+>   key <BKSL> {[ backslash, slash ]};
+> 
+>   include "level3(ralt_switch)"
